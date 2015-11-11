@@ -1,8 +1,40 @@
-x = (5, 1, 3)
-if (6, 0, 0) > x :
-	print "greater"
-else:
-	print "nope"
+import re
+x = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
+y = re.findall('\S+?@\S+' , x)
+print y
+
+# import re
+# x = 'From: Using the : character'
+# y = re.findall('^F.+:', x)
+# print y
+
+# import re
+# hand = open('mbox-short.txt')
+# for line in hand:
+#     line = line.rstrip()
+#     x = re.findall('@\S+[a-zA-Z]', line)
+#     if len(x) > 0 :
+#         print x
+
+# x = [1, 2, 3]
+# y = [4, 5, 6]
+
+# def join_lists(x, y):
+#     return x + y
+
+# def join_strings(words):
+#     result = ("")
+#     for i in range(len(words)):
+#         result = result + words[i]
+#     return result
+
+# print join_strings(n)
+
+# x = (5, 1, 3)
+# if (6, 0, 0) > x :
+# 	print "greater"
+# else:
+# 	print "nope"
 
 # stuff = dict()
 # print stuff.get('candy',-1)
